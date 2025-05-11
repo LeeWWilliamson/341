@@ -1,0 +1,20 @@
+// LOCALHOST
+###
+GET http://localhost:8080/contacts
+###
+GET http://localhost:8080/contacts/6816bd3f42e3726d60815fe2
+###
+GET http://localhost:8080/contacts/6816bd3f42e3726d60815fe3
+###
+GET http://localhost:8080/contacts/6816bd3f42e3726d60815fe4
+
+// PRODUCTION Deploy
+###
+GET https://three41-zody.onrender.com/contacts
+###
+GET https://three41-zody.onrender.com/contacts/6816bd3f42e3726d60815fe2
+###
+GET https://three41-zody.onrender.com/contacts/6816bd3f42e3726d60815fe3
+###
+GET https://three41-zody.onrender.com/contacts/6816bd3f42e3726d60815fe4
+###
