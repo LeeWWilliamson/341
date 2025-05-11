@@ -10,11 +10,11 @@ POST http://localhost:8080/contacts HTTP/1.1
 content-type: application/json
 
 {
-    "firstName":"Ashley",
-    "lastName":"Weaver",
-    "email":"aWeaver@test.com",
-    "favoriteColor":"Brown",
-    "birthday":"06/19/2000"
+    "firstName":"John",
+    "lastName":"Doe",
+    "email":"johndoe@test.com",
+    "favoriteColor":"Gray",
+    "birthday":"08/18/1990"
 }
 
 ### PUT contact 
@@ -25,13 +25,46 @@ content-type: application/json
     "firstName": "Elizabeth",
     "lastName": "Williamson",
     "email": "elizabeth@test.com",
-    "favoriteColor": "Red",
+    "favoriteColor": "Blue",
     "birthday": "10/12/71"
 }
 
 ### DELETE contact 
-DELETE http://localhost:8080/contacts/682032abb062a823bfccaf1e HTTP/1.1
+DELETE http://localhost:8080/contacts/68203542b062a823bfccaf20 HTTP/1.1
 
 
 // PRODUCTION Deploy 
 
+// LOCALHOST
+### Get all contacts
+GET https://three41-zody.onrender.com/contacts
+### Get contact by id
+GET https://three41-zody.onrender.com/contacts/6816bd3f42e3726d60815fe2
+
+
+### Create contact 
+POST https://three41-zody.onrender.com/contacts HTTP/1.1 
+content-type: application/json
+
+{
+    "firstName":"John",
+    "lastName":"Doe",
+    "email":"johndoe@test.com",
+    "favoriteColor":"Gray",
+    "birthday":"08/18/1990"
+}
+
+### PUT contact 
+PUT https://three41-zody.onrender.com/contacts/6816bd3f42e3726d60815fe2 HTTP/1.1 
+content-type: application/json
+
+{
+    "firstName": "Elizabeth",
+    "lastName": "Williamson",
+    "email": "elizabeth@test.com",
+    "favoriteColor": "Blue",
+    "birthday": "10/12/71"
+}
+
+### DELETE contact 
+DELETE https://three41-zody.onrender.com/contacts/68203542b062a823bfccaf20 HTTP/1.1
