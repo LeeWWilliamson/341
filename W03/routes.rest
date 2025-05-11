@@ -1,20 +1,37 @@
 // LOCALHOST
-###
+### Get all contacts
 GET http://localhost:8080/contacts
-###
+### Get contact by id
 GET http://localhost:8080/contacts/6816bd3f42e3726d60815fe2
-###
-GET http://localhost:8080/contacts/6816bd3f42e3726d60815fe3
-###
-GET http://localhost:8080/contacts/6816bd3f42e3726d60815fe4
 
-// PRODUCTION Deploy
-###
-GET https://three41-zody.onrender.com/contacts
-###
-GET https://three41-zody.onrender.com/contacts/6816bd3f42e3726d60815fe2
-###
-GET https://three41-zody.onrender.com/contacts/6816bd3f42e3726d60815fe3
-###
-GET https://three41-zody.onrender.com/contacts/6816bd3f42e3726d60815fe4
-###
+
+### Create contact 
+POST http://localhost:8080/contacts HTTP/1.1 
+content-type: application/json
+
+{
+    "firstName":"Ashley",
+    "lastName":"Weaver",
+    "email":"aWeaver@test.com",
+    "favoriteColor":"Brown",
+    "birthday":"06/19/2000"
+}
+
+### PUT contact 
+PUT http://localhost:8080/contacts/6816bd3f42e3726d60815fe2 HTTP/1.1 
+content-type: application/json
+
+{
+    "firstName": "Elizabeth",
+    "lastName": "Williamson",
+    "email": "elizabeth@test.com",
+    "favoriteColor": "Red",
+    "birthday": "10/12/71"
+}
+
+### DELETE contact 
+DELETE http://localhost:8080/contacts/682032abb062a823bfccaf1e HTTP/1.1
+
+
+// PRODUCTION Deploy 
+
