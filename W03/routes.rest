@@ -33,9 +33,14 @@ content-type: application/json
 DELETE http://localhost:8080/contacts/68203542b062a823bfccaf20 HTTP/1.1
 
 
+
+
+
+
+
 // PRODUCTION Deploy 
 
-// LOCALHOST
+// REMOTEHOST
 ### Get all contacts
 GET https://three41-w03.onrender.com/contacts
 ### Get contact by id
@@ -50,7 +55,7 @@ content-type: application/json
     "firstName":"John",
     "lastName":"Doe",
     "email":"johndoe@test.com",
-    "favoriteColor":"Gray",
+    "favoriteColor":"Orange",
     "birthday":"08/18/1990"
 }
 
@@ -62,9 +67,9 @@ content-type: application/json
     "firstName": "Elizabeth",
     "lastName": "Williamson",
     "email": "elizabeth@test.com",
-    "favoriteColor": "Blue",
+    "favoriteColor": "Gray",
     "birthday": "10/12/71"
 }
 
 ### DELETE contact 
-DELETE https://three41-w03.onrender.com/contacts/68203542b062a823bfccaf20 HTTP/1.1
+DELETE https://three41-w03.onrender.com/contacts/6a1bbaf3b8761290021b3f0f HTTP/1.1
