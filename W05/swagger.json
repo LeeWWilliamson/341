@@ -5,8 +5,8 @@
     "description": "Movie Wishlist API",
     "version": "1.0.0"
   },
-  "host": "w04.onrender.com",
-  "basePath": "/movies",
+  "host": "w05.onrender.com",
+  "basePath": "/",
   "schemes": [
     "https"
   ],

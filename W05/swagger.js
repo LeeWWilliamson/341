@@ -6,7 +6,6 @@ const doc = {
   },
   host: 'w05.onrender.com',
   schemes: ['https'],
-  basePath: '/movies'
 };
 const outputFile = './swagger.json';
 const endpointsFiles = ['./routes/movies.js'];
