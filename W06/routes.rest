@@ -1,0 +1,43 @@
+// LOCALHOST
+http://localhost:8080/api-docs/
+### Get all movies
+GET http://localhost:8080/movies
+### Get movie by id
+GET http://localhost:8080/movies/6a2502fdb49993b8b3c4d3f0
+
+
+### Create movie listing 
+POST http://localhost:8080/movies HTTP/1.1 
+content-type: application/json
+
+{
+    "title":"The Matrix",
+    "director":"Lana Wachowski, Lilly Wachowski",
+    "genre":"Action, Sci-Fi",
+    "year": "1986",
+    "rating": "R",
+    "watched": false,
+    "dateAdded": "2026-06-13"
+}
+
+// PRODUCTION Deploy on Render
+https://w05.onrender.com/api-docs/
+### Get all movies
+GET https://w05.onrender.com/movies
+### Get movie by id
+GET https://w05.onrender.com/movies/6a2502fdb49993b8b3c4d3f0
+
+
+### Create movie listing 
+POST https://w05.onrender.com/movies HTTP/1.1 
+content-type: application/json
+
+{
+    "title":"The Matrix II",
+    "director":"Lana Wachowski, Lilly Wachowski",
+    "genre":"Action, Sci-Fi",
+    "year": "1996",
+    "rating": "R",
+    "watched": false,
+    "dateAdded": "2026-06-13"
+}
