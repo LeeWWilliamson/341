@@ -6,7 +6,7 @@
     "version": "1.0.0"
   },
   "host": "w05.onrender.com",
-  "basePath": "/",
+  "basePath": "/movies",
   "schemes": [
     "https"
   ],
