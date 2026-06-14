@@ -4,7 +4,7 @@ const doc = {
     title: 'My API',
     description: 'Movie Wishlist API'
   },
-  host: 'w04.onrender.com',
+  host: 'w05.onrender.com',
   schemes: ['https'],
   basePath: '/movies'
 };
