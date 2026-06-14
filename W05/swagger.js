@@ -4,8 +4,8 @@ const doc = {
     title: 'My API',
     description: 'Movie Wishlist API'
   },
-  host: 'localhost:8080',
-  schemes: ['http'],
+  host: 'w04.onrender.com',
+  schemes: ['https'],
   basePath: '/movies'
 };
 const outputFile = './swagger.json';
